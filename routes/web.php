@@ -40,3 +40,19 @@ Route::get('/gallery', function () {
 Route::get('/gallery-single', function () {
     return view('dashboard/gallery-single');
 });
+
+Route::get('/admin', function () {
+    return view('admin/dashboard');
+});
+
+Route::get('/admin-user', function () {
+    return view('admin/user');
+});
+
+Route::get('/admin-table', function () {
+    return view('admin/tables');
+});
+
+Route::get('/admin-typography', function () {
+    return view('admin/typography');
+});
