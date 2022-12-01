@@ -20,3 +20,23 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard/index');
 });
+
+Route::get('/about', function () {
+    return view('dashboard/about');
+});
+
+Route::get('/contact', function () {
+    return view('dashboard/contact');
+});
+
+Route::get('/services', function () {
+    return view('dashboard/services');
+});
+
+Route::get('/gallery', function () {
+    return view('dashboard/gallery');
+});
+
+Route::get('/gallery-single', function () {
+    return view('dashboard/gallery-single');
+});
