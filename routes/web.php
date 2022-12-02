@@ -14,32 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
     return view('dashboard/index');
-})->name('dashboard');;
+})->name('dashboard');
 
 Route::get('/about', function () {
     return view('dashboard/about');
-})->name('about');;
+})->name('about');
 
 Route::get('/contact', function () {
     return view('dashboard/contact');
-});
+})->name('contact');
 
 Route::get('/services', function () {
     return view('dashboard/services');
-});
+})->name('services');
 
 Route::get('/gallery', function () {
     return view('dashboard/gallery');
-});
+})->name('gallery');
 
 Route::get('/gallery-single', function () {
     return view('dashboard/gallery-single');
-});
+})->name('gallery-single');
 
 Route::get('/admin', function () {
     return view('admin/dashboard');

@@ -49,21 +49,20 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="{{ set_active('dashboard') }}">
-            <a href="{{ route('dashboard') }}"><span>Home</span></a>
-            
+          <li>
+            <a href="{{ route('dashboard') }}" class="{{ set_active('dashboard') }}"><span>Home</span></a>
           </li>
-          <li class="{{ set_active('about') }}">
-            <a href="{{ route('about') }}">About</a>
+          <li>
+            <a href="{{ route('about') }}" class="{{ set_active('about') }}" >About</a>
           </li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery">Nature</a></li>
-              <li><a href="/gallery">People</a></li>
-              <li><a href="/gallery">Architecture</a></li>
-              <li><a href="/gallery">Animals</a></li>
-              <li><a href="/gallery">Sports</a></li>
-              <li><a href="/gallery">Travel</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >Nature</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >People</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >Architecture</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >Animals</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >Sports</a></li>
+              <li><a href="{{ route('gallery') }}" class="{{ set_active('gallery') }}" >Travel</a></li>
               <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="#">Sub Menu 1</a></li>
@@ -73,8 +72,8 @@
               </li>
             </ul>
           </li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a  href="{{ route('services') }}" class="{{ set_active('services') }}" >Services</a></li>
+          <li><a  href="{{ route('contact') }}" class="{{ set_active('contact') }}" >Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
