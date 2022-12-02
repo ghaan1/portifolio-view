@@ -52,3 +52,7 @@ Route::get('/admin-table', function () {
 Route::get('/admin-typography', function () {
     return view('admin/typography');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
