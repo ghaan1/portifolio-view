@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,22 +39,32 @@ Route::get('/gallery-single', function () {
     return view('dashboard/gallery-single');
 })->name('gallery-single');
 
-Route::get('/admin', function () {
-    return view('admin/dashboard');
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('proses_login', [AuthController::class, 'proses_login'])->name('proses_login');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::group(['middleware' => ['cek_login:admin']], function () {
+        Route::resource('admin', AdminController::class);
+        Route::get('/admin', [AdminController::class, 'index']);
+        //Route::get('logout', [AuthController::class, 'index'])->name('logout');
+        //Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+    });
+    Route::group(['middleware' => ['cek_login:editor']], function () {
+        //Route::resource('editor', AdminController::class);
+    });
 });
 
-Route::get('/admin-user', function () {
-    return view('admin/user');
-});
 
-Route::get('/admin-table', function () {
-    return view('admin/tables');
-});
 
-Route::get('/admin-typography', function () {
-    return view('admin/typography');
-});
+// Route::get('/admin-user', function () {
+//     return view('admin/user');
+// });
 
-Auth::routes();
+// Route::get('/admin-table', function () {
+//     return view('admin/tables');
+// });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/admin-typography', function () {
+//     return view('admin/typography');
+// });

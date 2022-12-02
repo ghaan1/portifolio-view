@@ -74,7 +74,7 @@
           </li>
           <li><a  href="{{ route('services') }}" class="{{ set_active('services') }}" >Services</a></li>
           <li><a  href="{{ route('contact') }}" class="{{ set_active('contact') }}" >Contact</a></li>
-          <li><a  href="{{ route('contact') }}" class="{{ set_active('contact') }}" >Login</a></li>
+          <li><a  href="{{ route('login') }}" class="{{ set_active('login') }}" >Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
