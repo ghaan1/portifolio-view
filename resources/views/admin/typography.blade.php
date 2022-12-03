@@ -4,14 +4,12 @@
         <div class="container-fluid">
           <div class="card">
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Material Dashboard Heading</h4>
-              <p class="card-category">Created using Roboto Font Family</p>
+              <h4 class="card-title">Create Post</h4>
+              <p class="card-category">Create your post here</p>
             </div>
             <div class="card-body">
-              <div id="typography">
-                <div class="card-title">
-                  <h2>Typography</h2>
-                </div>
+              <div id="create">
+                
                 <div class="row">
                   <div class="tim-typo">
                     <h1>

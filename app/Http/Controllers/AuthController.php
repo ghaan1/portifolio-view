@@ -18,7 +18,7 @@ class AuthController extends Controller
                 return redirect()->intended('editor');
             }
         }
-        return view('auth/login');
+        return view('auth/loginn');
     }
 
     public function proses_login(Request $request)
