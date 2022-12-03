@@ -56,6 +56,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/tableUser', function () {
             return view('admin/tableUser');
         })->name('tableUser');
+        Route::get('/tableGambar', function () {
+            return view('admin/table-gambar');
+        })->name('tableGambar');
+        Route::get('/tableFeedback', function () {
+            return view('admin/table-feedback');
+        })->name('tableFeedback');
         //Route::get('logout', [AuthController::class, 'index'])->name('logout');
         //Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     });
