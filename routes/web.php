@@ -46,7 +46,16 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cek_login:admin']], function () {
         Route::resource('admin', AdminController::class);
-        Route::get('/admin', [AdminController::class, 'index']);
+        Route::get('/admin', [AdminController::class, 'index'])->name('dashboardAdmin');
+        // Route::get('/admin', function () {
+        //     return view('admin/admin');
+        // })->name('admin');
+        Route::get('/user', function () {
+            return view('admin/user');
+        })->name('user');
+        Route::get('/tableUser', function () {
+            return view('admin/tableUser');
+        })->name('tableUser');
         //Route::get('logout', [AuthController::class, 'index'])->name('logout');
         //Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
     });
