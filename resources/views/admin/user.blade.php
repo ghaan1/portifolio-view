@@ -13,19 +13,13 @@
                 <div class="card-body">
                   <form>
                     <div class="row">
-                      <div class="col-md-5">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Company (disabled)</label>
-                          <input type="text" class="form-control" disabled>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Username</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Email address</label>
                           <input type="email" class="form-control">
@@ -35,7 +29,7 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Fist Name</label>
+                          <label class="bmd-label-floating">First Name</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -49,37 +43,8 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Adress</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">City</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Country</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Postal Code</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
                           <div class="form-group">
-                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+                            <label class="bmd-label-floating">About me</label>
                             <textarea class="form-control" rows="5"></textarea>
                           </div>
                         </div>
@@ -95,14 +60,14 @@
               <div class="card card-profile">
                 <div class="card-avatar">
                   <a href="#pablo">
-                    <img class="img" src="{{ asset('img/admin/faces/marc.jpg') }}" />
+                    <img class="img" src="{{ asset('img/admin/faces/penaldo.jpg') }}" />
                   </a>
                 </div>
                 <div class="card-body">
-                  <h6 class="card-category">CEO / Co-Founder</h6>
-                  <h4 class="card-title">Alec Thompson</h4>
+                  <h6 class="card-category">Wedus Gosong</h6>
+                  <h4 class="card-title">Penaldo</h4>
                   <p class="card-description">
-                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                    dondesta penaldongo vs tessi
                   </p>
                   <a href="#pablo" class="btn btn-primary btn-round">Follow</a>
                 </div>
